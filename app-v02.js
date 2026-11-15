@@ -347,7 +347,7 @@ function decodeAcneOutput(tensor,meta){
  for(const box of raw){if(kept.every(k=>k.classId!==box.classId||boxIou(k,box)<.45))kept.push(box);if(kept.length>=100)break}
  return kept;
 }
-async async function scanSkinLab(){
+async function scanSkinLab(){
  const img=byId("skinLabImage");
  if(!img||!img.complete||!img.naturalWidth){setAiStatus("Сначала выбери фотографию.");return}
  const button=byId("skinLabScan");button.disabled=true;byId("skinLabAccept").disabled=true;byId("skinLabToJournal").disabled=true;skinLabCandidates=[];
