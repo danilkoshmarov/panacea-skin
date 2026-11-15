@@ -1,4 +1,4 @@
-const CACHE_NAME="panacea-skin-v07-offline";
+const CACHE_NAME="panacea-skin-v08-offline";
 const MODEL_CACHE_PREFIX="panacea-acne-model-";
 const ASSETS=["./","./index.html","./manifest.webmanifest","./app-v02.css","./app-v02.js","./icon.svg"];
 
